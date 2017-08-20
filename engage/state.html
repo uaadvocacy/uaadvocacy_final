@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--SITE CONFIG--!>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=0.32">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+    <!--[if Internet Explorer]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <![end]-->
+
+<!-- WEBSITE TITLE -->
+	<title>University of Arizona Advocacy - State</title>
+
+<!-- CSS and JAVASCRIPT FILE LINKS -->
+	<link href="../files/css/bootstrap.css" rel="stylesheet" />
+	<link href="../files/css/style.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<script src="../files/js/jquery-1.10.2.js"></script>
+	<script src="../files/js/scripts.js"></script>
+
+<!-- SITE GOOGLE FONT API -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+
+<!-- SITE STYLE FORMATTING -->
+<style>
+	svg{
+    		display: block;
+   		margin: auto;
+	}
+  	.state{
+    		fill: none;
+    		stroke: #a9a9a9;
+    		stroke-width: 1;
+  	}
+  	.state:hover{
+    		fill-opacity:0.5;
+  	}
+	.test{
+		display:inline;
+		color: #ffffff;
+	}
+	#tooltip {
+		position: absolute;
+    		text-align: center;
+    		padding: 20px;
+    		margin: 10px;
+    		font: 12px sans-serif;
+    		background: lightsteelblue;
+    		border: 1px;
+    		border-radius: 2px;
+    		pointer-events: none;
+  	}
+  	#tooltip h4{
+    		margin:0;
+    		font-size:14px;
+  	}
+  	#tooltip{
+    		background:rgba(0,0,0,0.9);
+    		border:1px solid grey;
+    		border-radius:5px;
+    		font-size:12px;
+    		width:auto;
+    		padding:4px;
+    		color:white;
+    		opacity:0;
+  	}
+  	#tooltip table{
+    		table-layout:fixed;
+  	}
+  	#tooltip tr td{
+    		padding:0;
+    		margin:0;
+  	}
+  	#tooltip tr td:nth-child(1){
+    		width:50px;
+  	}
+  	#tooltip tr td:nth-child(2){
+    		text-align:center;
+  	}
+	.dropbtn {
+    		background-color: rgba(0, 1, 55, 1.0);
+    		color: white;
+    		padding: 16px;
+    		font-size: 16px;
+    		border: none;
+    		cursor: pointer;
+	}
+	.dropdown {
+    		position: relative;
+    		display: inline-block;
+	}
+	.dropdown-content {
+    		display: none;
+    		position: absolute;
+    		right: 0;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+	}	
+	.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+	}
+	.dropdown-content a:hover {
+		background-color: #f1f1f1
+	}
+	.dropdown:hover .dropdown-content {
+    		display: block;
+	}
+	.dropdown:hover .dropbtn {
+    		background-color: rgba(0, 1, 55, 1.0);
+	}
+</style>
+<!-- END STYLE FORMATTING -->
+<!-- HTML BODY -->
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- NAVBAR SECTION -->
+	<div class="navbar navbar-inverse navbar-fixed-top scrollclass">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#"><font face="calibri" font size="9" style="position: absolute; top:30px; left:120px; width:200px; height:25px">arizon<strong>advocacy</strong></font></a>
+				<a class="navbar-brand" href="#"><font face="calibri" font size="4" font color="#a5a5a5" style="position: absolute; top:60px; left:120px; width:300px; height:25px">THE UNIVERSITY OF ARIZONA</font></a>
+			</div>
+
+			<div class="dropdown" style="float:right;">
+				<button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">About</font></button>
+					<div class="dropdown-content" style="left:0;">
+						<a href="http://u.arizona.edu/~stephaniezawada/about/staff.html">Staff</font></a>
+						<a href="http://u.arizona.edu/~stephaniezawada/about/contact.html">Contact</a>
+						<a href="http://u.arizona.edu/~stephaniezawada/about/advocats.html">AdvoCats</a>
+						<a href="http://u.arizona.edu/~stephaniezawada/about/join.html">Join</a>
+						<a href="http://u.arizona.edu/~stephaniezawada/about/events.html">Events</a>
+					</div>
+			</div>
+
+			<div class="dropdown" style="float:right;">
+				<button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">Engage</font></button>
+					<div class="dropdown-content" style="left:0;">
+						<a href="http://u.arizona.edu/~stephaniezawada/engage/local.html">Local</a>
+						<a href="http://u.arizona.edu/~stephaniezawada/engage/state.html">State</a>
+						<a href="http://u.arizona.edu/~stephaniezawada/engage/federal.html">Federal</a>
+						<a href="http://u.arizona.edu/~stephaniezawada/engage/tribal.html">Tribal</a>
+					</div>
+			</div>
+
+			<div class="dropdown" style="float:right;">
+				<button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">Issues</font></button>
+					<div class="dropdown-content" style="left:0;">
+						<a href="http://u.arizona.edu/~stephaniezawada/issues/explore.html">Explore</a>
+						<a href="http://u.arizona.edu/~stephaniezawada/issues/innovate.html">Innovate</a>
+						<a href="http://u.arizona.edu/~stephaniezawada/issues/parallel.html">Parallels</a>
+						<a href="http://u.arizona.edu/~stephaniezawada/issues/synergy.html">Synergy</a>
+					</div>
+			</div>
+
+			<div class="dropdown" style="float:right;">
+				<button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/index.html">Impact</a></font></button>
+			</div>
+ 		</div>
+	</div> 
+<!--END NAVBAR SECTION-->
+<!--JUST SECTION-->
+    <div id="just-sec" style="position: relative">
+	<div class="overlay">
+		<p><br>
+		<br>
+
+		STATE RELATIONS
+
+		<br> 
+		<div class="explore"><i></i></div>
+        </div>
+    </div>
+<!--END JUST SECTION-->
+<!--HOME SECTION-->
+<section id="home-sec">
+	<div id="home-sec">
+ 		<div class="container">
+			<div class="storyonehead">
+				<br>
+                        	<strong>Find your Districts</strong>
+			</div>
+                </div>
+	  	<div class="container">
+			<iframe style="border-style: none;" src="https://uaadvocacy.github.io/my-reps/" height="300" width="1100"></iframe>
+        	</div>
+    	</div>
+</section>
+<!-- END HOME SECTION -->
+<!-- SECOND HOME SECTION -->
+<section id="home-sec">
+	<div id="home-sec">
+		<div class="container">
+			<div class="col-md-8 pad-top scrollclass">
+				<br>
+				<br>
+				<table style="width:215%">
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district1.html">AZ Legislative District 1</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district2.html">AZ Legislative District 2</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district3.html">AZ Legislative District 3</a></font></td>
+				</tr>
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district4.html">AZ Legislative District 4</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district5.html">AZ Legislative District 5</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district6.html">AZ Legislative District 6</a></font></td>
+				</tr>
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district7.html">AZ Legislative District 7</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district8.html">AZ Legislative District 8</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district9.html">AZ Legislative District 9</a></font></td>
+				</tr>
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district10.html">AZ Legislative District 10</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district11.html">AZ Legislative District 11</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district12.html">AZ Legislative District 12</a></font></td>
+				</tr>
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district13.html">AZ Legislative District 13</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district14.html">AZ Legislative District 14</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district15.html">AZ Legislative District 15</a></font></td>
+				</tr>
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district16.html">AZ Legislative District 16</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district17.html">AZ Legislative District 17</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district18.html">AZ Legislative District 18</a></font></td>
+				</tr>
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district19.html">AZ Legislative District 19</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district20.html">AZ Legislative District 20</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district21.html">AZ Legislative District 21</a></font></td>
+				</tr>
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district22.html">AZ Legislative District 22</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district23.html">AZ Legislative District 23</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district24.html">AZ Legislative District 24</a></font></td>
+				</tr>
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district25.html">AZ Legislative District 25</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district26.html">AZ Legislative District 26</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district27.html">AZ Legislative District 27</a></font></td>
+				</tr>
+
+				<tr>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district28.html">AZ Legislative District 28</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district29.html">AZ Legislative District 29</a></font></td>
+				<td><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/engage/state/district30.html">AZ Legislative District 30</a></font></td>
+				</tr>
+
+				</table>
+				<br> 
+				<div class="explore"><i></i></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END SECOND HOME SECTION -->
+<!-- THIRD HOME SECTION -->
+<section id="home-sec">
+	<div id="home-sec">
+		<div class="container">
+			<div class="storyonehead">
+			When does the 2016 legislative session begin?
+			<br>
+			</div>
+                </div>
+
+  		<div class="container">
+			Each year, the Arizona State Legislature convenes into session on the second Monday in January. Next year, Governor Doug Ducey will deliver his State of the State Address to begin the legislative session on Monday, Janaury 11, 2016.
+			<br>
+			
+       		</div>
+		<div class="container">
+			<div class="storyonehead">
+				How long does session last?
+				<br>
+			</div>
+                </div>
+
+  		<div class="container">
+				The Arizona legislature is a part-time body that typically completes their work in 100 days. Sometimes sessions can go much shorter or longer, however, depending on circumstances.
+				<br>
+       		</div>
+		<div class="container">
+			<div class="storyonehead">
+				How does the UA set its legislative agenda?
+				<br>
+			</div>
+                </div>
+
+  		<div class="container">
+				After each legislative session concludes, the President of the UA meets with his cabinet to assess the outcomes of the past session and to determine what the needs of the university are in the coming year. The President works with the Arizona Board of Regents (ABOR) and the presidents of ASU and NAU to put together a higher education-wide legislative agenda. ABOR votes to approve a legislative agenda, authorizing government relations staff from the universities and ABOR to begin advocating for such policies.
+				<br>
+       		</div>
+		<div class="container">
+			<div class="storyonehead">
+				Why does the UA need lobbyists?
+				<br>
+			</div>
+                </div>
+  		<div class="container">
+				As a public university supported by state resources, the UA has a responsibility to communicate with the Arizona legislature, the Office of the Governor and the various state agencies. The UA government relations team monitors all activity at the state government to assess any impact it may have on the university and keep the President apprised of all such developments. During the legislative session, UA lobbyists meet with members of the state House and Senate to articulate the positions of the unviersity and ABOR to ensure support and investment in higher education through legislation.
+				<br>
+				<br>
+       		</div>
+        </div>
+</section>
+<!-- END THIRD HOME SECTION -->
+<!-- LOCATION SECTION -->
+<section id="location-sec">
+	<div class="overlay">
+        	<div class="container ">
+            		<div id="port-folio">
+                		<div class="row ">
+                			<div class="col-md-4 col-sm-4">
+						<a class="twitter-timeline" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/UAAdvoCats">Tweets by UAAdvoCats</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+                			<div class="col-md-4 col-sm-4">
+     						<span class="filter" data-filter="WORDPRESS"><font color="#000137"  font face="calibri" font size="7" margin-left: 5px; text-align:center;> Text<br><mark>'BEARDOWN' </mark><br>to 52886 </font></span>                 
+  					</div>      
+ 					<div class="col-md-4 col-sm-4">
+						<div class="fb-page" data-href="https://www.facebook.com/UAAdvoCats/" data-tabs="timeline" data-width="300" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/UAAdvoCats/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UAAdvoCats/">UA AdvoCats</a></blockquote>
+					</div>
+				</div>
+	     		</div>
+		</div>  
+	</div>     
+</section>
+</div>
+<!-- END LOCATION  SECTION -->
+
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="../files/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="../files/js/bootstrap.js"></script>
+    <!-- PRETTYPHOTO SCRIPTS -->
+    <script src="../files/js/jquery.prettyPhoto.js"></script>
+    <!-- PORTFOLIO FILTER PLUGIN  -->
+    <script src="../files/js/jquery.mixitup.min.js"></script>
+    <!-- NICE SCROLL SCRIPTS   -->
+    <script src="../files/js/jquery.nicescroll.min.js"></script>
+    <!-- EASING SCROLL SCRIPTS   -->
+    <script src="../files/js/jquery.easing.min.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="../files/js/custom.js"></script>
+
+</body>
+</html>
