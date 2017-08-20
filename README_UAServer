@@ -1,0 +1,11 @@
+HOW TO UPLOAD REPOSITORY TO U.ARIZONA.EDU SITE
+1. Find local repository, i.e. in "My Documents"
+2. Open FUGU 
+  "Connect to: u.arizona.edu"
+  "Username: <netid>"
+  "Port: 22"
+3. Enter UA password
+4. In the "public_html" folder that opens (righthand side of FUGU screen), double-click folder to open
+5. Delete contents
+6. Drag and drop the local reporsitory found in step 1.
+7. Open http://u.arizona.edu/~<netid>
